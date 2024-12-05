@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: #f0dff5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 4em; /* Increase font size for emphasis */
+    color: #9b057b; /* Teal color for a quirky feel */
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adding a fun shadow effect */
+    margin-top: 20px;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .controls div {
+    margin: 0 15px;
+    text-align: left;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  input[type="color"] {
+    border: none;
+    padding: 5px;
+  }
+  
+  #brushSizeValue {
+    font-weight: bold;
+  }
+  
+  #drawingCanvas {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    cursor: crosshair;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e55d4e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #drawingCanvas {
+      height: 300px;
+    }
+  }
+  
